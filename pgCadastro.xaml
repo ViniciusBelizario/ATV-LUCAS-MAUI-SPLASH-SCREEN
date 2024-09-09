@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="atv2.pgCadastro"
+             Title="pgCadastro">
+    <ScrollView>
+        <StackLayout Padding="20">
+            <!-- Fabricante Section -->
+            <Label Text="Fabricante" FontSize="Medium"/>
+            <Entry x:Name="FabricanteEntry" Placeholder="Nome do Fabricante"/>
+            <Label x:Name="FabricanteLabelValidation" TextColor="Red" IsVisible="False"/>
+
+            <Label Text="CNPJ" FontSize="Medium"/>
+            <Entry x:Name="CnpjEntry" Placeholder="CNPJ" Keyboard="Numeric" MaxLength="14"/>
+            <Label x:Name="CnpjLabelValidation" TextColor="Red" IsVisible="False"/>
+
+            <Label Text="Nome" FontSize="Medium"/>
+            <Entry x:Name="NomeEntry" Placeholder="Nome do Fabricante"/>
+            <Label x:Name="NomeLabelValidation" TextColor="Red" IsVisible="False"/>
+
+            <!-- Produto Section -->
+            <Label Text="Código de Barras" FontSize="Medium"/>
+            <Entry x:Name="CodigoBarrasEntry" Placeholder="Código de Barras" Keyboard="Numeric" MaxLength="13"/>
+            <Label x:Name="CodigoBarrasLabelValidation" TextColor="Red" IsVisible="False"/>
+
+            <Label Text="Descrição" FontSize="Medium"/>
+            <Entry x:Name="DescricaoEntry" Placeholder="Descrição do Produto"/>
+            <Label x:Name="DescricaoLabelValidation" TextColor="Red" IsVisible="False"/>
+
+            <Label Text="Preço" FontSize="Medium"/>
+            <Entry x:Name="PrecoEntry" Placeholder="Preço" Keyboard="Numeric"/>
+            <Label x:Name="PrecoLabelValidation" TextColor="Red" IsVisible="False"/>
+
+            <!-- Brinquedo Section -->
+            <Label Text="Categoria" FontSize="Medium"/>
+            <Entry x:Name="CategoriaEntry" Placeholder="Categoria"/>
+            <Label x:Name="CategoriaLabelValidation" TextColor="Red" IsVisible="False"/>
+
+            <Label Text="Idade Mínima" FontSize="Medium"/>
+            <Entry x:Name="IdadeMinimaEntry" Placeholder="Idade Mínima" Keyboard="Numeric"/>
+            <Label x:Name="IdadeMinimaLabelValidation" TextColor="Red" IsVisible="False"/>
+
+            <!-- Validar Button -->
+            <Button Text="Validar" Clicked="OnValidarClicked"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

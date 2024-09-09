@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="atv2.MainPage">
+
+    <StackLayout>
+        <StackLayout>
+            <Image Source="ubuntu.png"
+                   WidthRequest="100"
+                   HeightRequest="50"
+                   HorizontalOptions="Start"
+                   />
+            <Button Text="Cadastrar"
+                    
+                    Clicked="btnCadastro"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="FillAndExpand" />
+        </StackLayout>
+
+        <StackLayout>
+            <Image Source="linux.png"
+                   HeightRequest="400"
+                   WidthRequest="700"/>
+        </StackLayout>
+
+        <StackLayout>
+            <Label Text="Nome: Vinicius Gabriel Belizario 
+                   RA: 2022199190"
+                   HorizontalOptions="Start"/>
+            
+            <Label Text="Nome: João Victor Madeira Garrido
+                   RA: 2019195750"
+                   HorizontalOptions="Start"/>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>

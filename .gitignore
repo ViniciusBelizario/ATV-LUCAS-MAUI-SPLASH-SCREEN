@@ -1,0 +1,17 @@
+﻿# Ignore arquivos de configuração e cache do Visual Studio
+.vs/
+.vscode/
+
+# Arquivos de build e dependências
+bin/
+obj/
+
+# Ignore arquivos temporários do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Outros arquivos do Visual Studio
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
